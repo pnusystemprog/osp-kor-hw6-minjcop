@@ -1,13 +1,15 @@
-// array of sturcure
+#define MAX 50
 
-# define MAX 50
+void registerPhoneData(void);
+void printAll(void);
+void searchByName(void);
+void DeleteByName(void);
 
-struct Contact
-{
-    char Name[10];
-    char PhoneNumber[13];
+extern int size; // 
+
+struct phonebook{
+	char name[MAX];
+	char number[MAX];
 };
 
-struct Contact PhoneBook[MAX];
-
-int size;  // store the actual numbers of PhoneBook
+extern struct phonebook book[MAX];
